@@ -1,5 +1,6 @@
 package de.tiq.beeswax.jdbc;
 
+import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -78,6 +79,26 @@ public class BeeswaxJdbcTest {
 		Assert.assertEquals(9, metaData.getColumnCount());
 		Assert.assertEquals("created_at", metaData.getColumnName(1));
 		Assert.assertEquals(Types.VARCHAR, metaData.getColumnType(1));
+	}
+
+	
+	@Test
+	public void databaseMetaData() throws SQLException {
+		DatabaseMetaData databaseMetaData = conn.getMetaData();
+		
+		Assert.assertNotNull(databaseMetaData);
+		Assert.assertEquals("beeswax", databaseMetaData.getDatabaseProductName());
+		Assert.assertEquals("BeeswaxDriver", databaseMetaData.getDriverName());
+	}
+	
+	@Test
+	public void execute() throws SQLException {
+		Statement statement = conn.createStatement();
+		
+		Assert.assertNotNull(statement);
+		Assert.assertTrue(statement.execute("select * from tweets limit 20"));
+		Assert.assertNotNull(statement.getResultSet());
+		
 	}
 	
 	@After

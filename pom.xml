@@ -8,7 +8,7 @@
 		<dependency>
 			<groupId>de.tiq</groupId>
 			<artifactId>Jdbc_Annotations</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.2-SNAPSHOT</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>commons-lang</artifactId>
@@ -125,9 +125,9 @@
 				<version>2.1.0</version>
 				<executions>
 					<execution>
-						<phase>generate-test-sources</phase>
+						<phase>generate-sources</phase>
 						<goals>
-							<goal>process-test</goal>
+							<goal>process</goal>
 						</goals>
 					</execution>
 				</executions>
