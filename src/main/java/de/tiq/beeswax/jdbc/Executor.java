@@ -48,154 +48,154 @@ public class Executor extends QueryExecutor {
 
 		@Override
 		public boolean isWrapperFor(Class<?> arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isWrapperFor");
+			System.out.println("TIQ ResultSetMetaData.isWrapperFor");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isWritable(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isWritable");
+			System.out.println("TIQ ResultSetMetaData.isWritable");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isSigned(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isSigned");
+			System.out.println("TIQ ResultSetMetaData.isSigned");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isSearchable(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isSearchable");
+			System.out.println("TIQ ResultSetMetaData.isSearchable");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isReadOnly(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isReadOnly");
+			System.out.println("TIQ ResultSetMetaData.isReadOnly");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public int isNullable(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isNullable");
+			System.out.println("TIQ ResultSetMetaData.isNullable");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public boolean isDefinitelyWritable(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isDefinitelyWritable");
+			System.out.println("TIQ ResultSetMetaData.isDefinitelyWritable");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isCurrency(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isCurrency");
+			System.out.println("TIQ ResultSetMetaData.isCurrency");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isCaseSensitive(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isCaseSensitive");
+			System.out.println("TIQ ResultSetMetaData.isCaseSensitive");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isAutoIncrement(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.isAutoIncrement");
+			System.out.println("TIQ ResultSetMetaData.isAutoIncrement");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public String getTableName(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getTableName");
+			System.out.println("TIQ ResultSetMetaData.getTableName");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getSchemaName(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getSchemaName");
+			System.out.println("TIQ ResultSetMetaData.getSchemaName");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public int getScale(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getScale");
+			System.out.println("TIQ ResultSetMetaData.getScale");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getPrecision(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getPrecision");
+			System.out.println("TIQ ResultSetMetaData.getPrecision");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public String getColumnTypeName(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnTypeName");
+			System.out.println("TIQ ResultSetMetaData.getColumnTypeName");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public int getColumnType(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnType");
+			System.out.println("TIQ ResultSetMetaData.getColumnType");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public String getColumnName(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnName");
+			System.out.println("TIQ ResultSetMetaData.getColumnName");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getColumnLabel(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnLabel");
+			System.out.println("TIQ ResultSetMetaData.getColumnLabel");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public int getColumnDisplaySize(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnDisplaySize");
+			System.out.println("TIQ ResultSetMetaData.getColumnDisplaySize");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getColumnCount() throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnCount");
+			System.out.println("TIQ ResultSetMetaData.getColumnCount");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public String getColumnClassName(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getColumnClassName");
+			System.out.println("TIQ ResultSetMetaData.getColumnClassName");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getCatalogName(int arg0) throws SQLException {
-			System.out.println("XXX ResultSetMetaData.getCatalogName");
+			System.out.println("TIQ ResultSetMetaData.getCatalogName");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -210,14 +210,14 @@ public class Executor extends QueryExecutor {
 
 		@Override
 		public boolean isWrapperFor(Class<?> iface) throws SQLException {
-			System.out.println("XXX ResultSet.isWrapperFor");
+			System.out.println("TIQ ResultSet.isWrapperFor");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean wasNull() throws SQLException {
-			System.out.println("XXX ResultSet.wasNull");
+			System.out.println("TIQ ResultSet.wasNull");
 			// TODO Auto-generated method stub
 			return false;
 		}
@@ -225,7 +225,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateTimestamp(String columnLabel, Timestamp x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateTimestamp");
+			System.out.println("TIQ ResultSet.updateTimestamp");
 			// TODO Auto-generated method stub
 
 		}
@@ -233,21 +233,21 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateTimestamp(int columnIndex, Timestamp x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateTimestamp");
+			System.out.println("TIQ ResultSet.updateTimestamp");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateTime(String columnLabel, Time x) throws SQLException {
-			System.out.println("XXX ResultSet.updateTime");
+			System.out.println("TIQ ResultSet.updateTime");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateTime(int columnIndex, Time x) throws SQLException {
-			System.out.println("XXX ResultSet.updateTime");
+			System.out.println("TIQ ResultSet.updateTime");
 			// TODO Auto-generated method stub
 
 		}
@@ -255,14 +255,14 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateString(String columnLabel, String x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateString");
+			System.out.println("TIQ ResultSet.updateString");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateString(int columnIndex, String x) throws SQLException {
-			System.out.println("XXX ResultSet.updateString");
+			System.out.println("TIQ ResultSet.updateString");
 			// TODO Auto-generated method stub
 
 		}
@@ -270,14 +270,14 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateShort(String columnLabel, short x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateShort");
+			System.out.println("TIQ ResultSet.updateShort");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateShort(int columnIndex, short x) throws SQLException {
-			System.out.println("XXX ResultSet.updateShort");
+			System.out.println("TIQ ResultSet.updateShort");
 			// TODO Auto-generated method stub
 
 		}
@@ -285,7 +285,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateSQLXML(String columnLabel, SQLXML xmlObject)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateSQLXML");
+			System.out.println("TIQ ResultSet.updateSQLXML");
 			// TODO Auto-generated method stub
 
 		}
@@ -293,7 +293,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateSQLXML(int columnIndex, SQLXML xmlObject)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateSQLXML");
+			System.out.println("TIQ ResultSet.updateSQLXML");
 			// TODO Auto-generated method stub
 
 		}
@@ -301,35 +301,35 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateRowId(String columnLabel, RowId x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateRowId");
+			System.out.println("TIQ ResultSet.updateRowId");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateRowId(int columnIndex, RowId x) throws SQLException {
-			System.out.println("XXX ResultSet.updateRowId");
+			System.out.println("TIQ ResultSet.updateRowId");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateRow() throws SQLException {
-			System.out.println("XXX ResultSet.updateRow");
+			System.out.println("TIQ ResultSet.updateRow");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateRef(String columnLabel, Ref x) throws SQLException {
-			System.out.println("XXX ResultSet.updateRef");
+			System.out.println("TIQ ResultSet.updateRef");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateRef(int columnIndex, Ref x) throws SQLException {
-			System.out.println("XXX ResultSet.updateRef");
+			System.out.println("TIQ ResultSet.updateRef");
 			// TODO Auto-generated method stub
 
 		}
@@ -337,7 +337,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateObject(String columnLabel, Object x, int scaleOrLength)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateObject");
+			System.out.println("TIQ ResultSet.updateObject");
 			// TODO Auto-generated method stub
 
 		}
@@ -345,7 +345,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateObject(int columnIndex, Object x, int scaleOrLength)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateObject");
+			System.out.println("TIQ ResultSet.updateObject");
 			// TODO Auto-generated method stub
 
 		}
@@ -353,28 +353,28 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateObject(String columnLabel, Object x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateObject");
+			System.out.println("TIQ ResultSet.updateObject");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateObject(int columnIndex, Object x) throws SQLException {
-			System.out.println("XXX ResultSet.updateObject");
+			System.out.println("TIQ ResultSet.updateObject");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateNull(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.updateNull");
+			System.out.println("TIQ ResultSet.updateNull");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateNull(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.updateNull");
+			System.out.println("TIQ ResultSet.updateNull");
 			// TODO Auto-generated method stub
 
 		}
@@ -382,7 +382,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNString(String columnLabel, String nString)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNString");
+			System.out.println("TIQ ResultSet.updateNString");
 			// TODO Auto-generated method stub
 
 		}
@@ -390,7 +390,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNString(int columnIndex, String nString)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNString");
+			System.out.println("TIQ ResultSet.updateNString");
 			// TODO Auto-generated method stub
 
 		}
@@ -398,7 +398,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNClob(String columnLabel, Reader reader, long length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNClob");
+			System.out.println("TIQ ResultSet.updateNClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -406,7 +406,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNClob(int columnIndex, Reader reader, long length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNClob");
+			System.out.println("TIQ ResultSet.updateNClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -414,7 +414,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNClob(String columnLabel, Reader reader)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNClob");
+			System.out.println("TIQ ResultSet.updateNClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -422,7 +422,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNClob(int columnIndex, Reader reader)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNClob");
+			System.out.println("TIQ ResultSet.updateNClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -430,7 +430,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNClob(String columnLabel, NClob nClob)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNClob");
+			System.out.println("TIQ ResultSet.updateNClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -438,7 +438,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNClob(int columnIndex, NClob nClob)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNClob");
+			System.out.println("TIQ ResultSet.updateNClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -446,7 +446,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNCharacterStream(String columnLabel, Reader reader,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateNCharacterStream");
+			System.out.println("TIQ ResultSet.updateNCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -454,7 +454,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNCharacterStream(int columnIndex, Reader x,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateNCharacterStream");
+			System.out.println("TIQ ResultSet.updateNCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -462,7 +462,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNCharacterStream(String columnLabel, Reader reader)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNCharacterStream");
+			System.out.println("TIQ ResultSet.updateNCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -470,35 +470,35 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateNCharacterStream(int columnIndex, Reader x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateNCharacterStream");
+			System.out.println("TIQ ResultSet.updateNCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateLong(String columnLabel, long x) throws SQLException {
-			System.out.println("XXX ResultSet.updateLong");
+			System.out.println("TIQ ResultSet.updateLong");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateLong(int columnIndex, long x) throws SQLException {
-			System.out.println("XXX ResultSet.updateLong");
+			System.out.println("TIQ ResultSet.updateLong");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateInt(String columnLabel, int x) throws SQLException {
-			System.out.println("XXX ResultSet.updateInt");
+			System.out.println("TIQ ResultSet.updateInt");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateInt(int columnIndex, int x) throws SQLException {
-			System.out.println("XXX ResultSet.updateInt");
+			System.out.println("TIQ ResultSet.updateInt");
 			// TODO Auto-generated method stub
 
 		}
@@ -506,14 +506,14 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateFloat(String columnLabel, float x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateFloat");
+			System.out.println("TIQ ResultSet.updateFloat");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateFloat(int columnIndex, float x) throws SQLException {
-			System.out.println("XXX ResultSet.updateFloat");
+			System.out.println("TIQ ResultSet.updateFloat");
 			// TODO Auto-generated method stub
 
 		}
@@ -521,28 +521,28 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateDouble(String columnLabel, double x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateDouble");
+			System.out.println("TIQ ResultSet.updateDouble");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateDouble(int columnIndex, double x) throws SQLException {
-			System.out.println("XXX ResultSet.updateDouble");
+			System.out.println("TIQ ResultSet.updateDouble");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateDate(String columnLabel, Date x) throws SQLException {
-			System.out.println("XXX ResultSet.updateDate");
+			System.out.println("TIQ ResultSet.updateDate");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateDate(int columnIndex, Date x) throws SQLException {
-			System.out.println("XXX ResultSet.updateDate");
+			System.out.println("TIQ ResultSet.updateDate");
 			// TODO Auto-generated method stub
 
 		}
@@ -550,7 +550,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateClob(String columnLabel, Reader reader, long length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateClob");
+			System.out.println("TIQ ResultSet.updateClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -558,7 +558,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateClob(int columnIndex, Reader reader, long length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateClob");
+			System.out.println("TIQ ResultSet.updateClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -566,7 +566,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateClob(String columnLabel, Reader reader)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateClob");
+			System.out.println("TIQ ResultSet.updateClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -574,21 +574,21 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateClob(int columnIndex, Reader reader)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateClob");
+			System.out.println("TIQ ResultSet.updateClob");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateClob(String columnLabel, Clob x) throws SQLException {
-			System.out.println("XXX ResultSet.updateClob");
+			System.out.println("TIQ ResultSet.updateClob");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateClob(int columnIndex, Clob x) throws SQLException {
-			System.out.println("XXX ResultSet.updateClob");
+			System.out.println("TIQ ResultSet.updateClob");
 			// TODO Auto-generated method stub
 
 		}
@@ -596,7 +596,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateCharacterStream(String columnLabel, Reader reader,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateCharacterStream");
+			System.out.println("TIQ ResultSet.updateCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -604,7 +604,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateCharacterStream(int columnIndex, Reader x, long length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateCharacterStream");
+			System.out.println("TIQ ResultSet.updateCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -612,7 +612,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateCharacterStream(String columnLabel, Reader reader,
 				int length) throws SQLException {
-			System.out.println("XXX ResultSet.updateCharacterStream");
+			System.out.println("TIQ ResultSet.updateCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -620,7 +620,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateCharacterStream(int columnIndex, Reader x, int length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateCharacterStream");
+			System.out.println("TIQ ResultSet.updateCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -628,7 +628,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateCharacterStream(String columnLabel, Reader reader)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateCharacterStream");
+			System.out.println("TIQ ResultSet.updateCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -636,7 +636,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateCharacterStream(int columnIndex, Reader x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateCharacterStream");
+			System.out.println("TIQ ResultSet.updateCharacterStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -644,28 +644,28 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBytes(String columnLabel, byte[] x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBytes");
+			System.out.println("TIQ ResultSet.updateBytes");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateBytes(int columnIndex, byte[] x) throws SQLException {
-			System.out.println("XXX ResultSet.updateBytes");
+			System.out.println("TIQ ResultSet.updateBytes");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateByte(String columnLabel, byte x) throws SQLException {
-			System.out.println("XXX ResultSet.updateByte");
+			System.out.println("TIQ ResultSet.updateByte");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateByte(int columnIndex, byte x) throws SQLException {
-			System.out.println("XXX ResultSet.updateByte");
+			System.out.println("TIQ ResultSet.updateByte");
 			// TODO Auto-generated method stub
 
 		}
@@ -673,7 +673,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBoolean(String columnLabel, boolean x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBoolean");
+			System.out.println("TIQ ResultSet.updateBoolean");
 			// TODO Auto-generated method stub
 
 		}
@@ -681,7 +681,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBoolean(int columnIndex, boolean x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBoolean");
+			System.out.println("TIQ ResultSet.updateBoolean");
 			// TODO Auto-generated method stub
 
 		}
@@ -689,7 +689,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBlob(String columnLabel, InputStream inputStream,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateBlob");
+			System.out.println("TIQ ResultSet.updateBlob");
 			// TODO Auto-generated method stub
 
 		}
@@ -697,7 +697,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBlob(int columnIndex, InputStream inputStream,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateBlob");
+			System.out.println("TIQ ResultSet.updateBlob");
 			// TODO Auto-generated method stub
 
 		}
@@ -705,7 +705,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBlob(String columnLabel, InputStream inputStream)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBlob");
+			System.out.println("TIQ ResultSet.updateBlob");
 			// TODO Auto-generated method stub
 
 		}
@@ -713,21 +713,21 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBlob(int columnIndex, InputStream inputStream)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBlob");
+			System.out.println("TIQ ResultSet.updateBlob");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateBlob(String columnLabel, Blob x) throws SQLException {
-			System.out.println("XXX ResultSet.updateBlob");
+			System.out.println("TIQ ResultSet.updateBlob");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateBlob(int columnIndex, Blob x) throws SQLException {
-			System.out.println("XXX ResultSet.updateBlob");
+			System.out.println("TIQ ResultSet.updateBlob");
 			// TODO Auto-generated method stub
 
 		}
@@ -735,7 +735,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBinaryStream(String columnLabel, InputStream x,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateBinaryStream");
+			System.out.println("TIQ ResultSet.updateBinaryStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -743,7 +743,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBinaryStream(int columnIndex, InputStream x,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateBinaryStream");
+			System.out.println("TIQ ResultSet.updateBinaryStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -751,7 +751,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBinaryStream(String columnLabel, InputStream x,
 				int length) throws SQLException {
-			System.out.println("XXX ResultSet.updateBinaryStream");
+			System.out.println("TIQ ResultSet.updateBinaryStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -759,7 +759,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBinaryStream(int columnIndex, InputStream x,
 				int length) throws SQLException {
-			System.out.println("XXX ResultSet.updateBinaryStream");
+			System.out.println("TIQ ResultSet.updateBinaryStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -767,7 +767,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBinaryStream(String columnLabel, InputStream x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBinaryStream");
+			System.out.println("TIQ ResultSet.updateBinaryStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -775,7 +775,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBinaryStream(int columnIndex, InputStream x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBinaryStream");
+			System.out.println("TIQ ResultSet.updateBinaryStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -783,7 +783,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBigDecimal(String columnLabel, BigDecimal x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBigDecimal");
+			System.out.println("TIQ ResultSet.updateBigDecimal");
 			// TODO Auto-generated method stub
 
 		}
@@ -791,7 +791,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateBigDecimal(int columnIndex, BigDecimal x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateBigDecimal");
+			System.out.println("TIQ ResultSet.updateBigDecimal");
 			// TODO Auto-generated method stub
 
 		}
@@ -799,7 +799,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateAsciiStream(String columnLabel, InputStream x,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateAsciiStream");
+			System.out.println("TIQ ResultSet.updateAsciiStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -807,7 +807,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateAsciiStream(int columnIndex, InputStream x,
 				long length) throws SQLException {
-			System.out.println("XXX ResultSet.updateAsciiStream");
+			System.out.println("TIQ ResultSet.updateAsciiStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -815,7 +815,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateAsciiStream(String columnLabel, InputStream x,
 				int length) throws SQLException {
-			System.out.println("XXX ResultSet.updateAsciiStream");
+			System.out.println("TIQ ResultSet.updateAsciiStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -823,7 +823,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateAsciiStream(int columnIndex, InputStream x, int length)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateAsciiStream");
+			System.out.println("TIQ ResultSet.updateAsciiStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -831,7 +831,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateAsciiStream(String columnLabel, InputStream x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateAsciiStream");
+			System.out.println("TIQ ResultSet.updateAsciiStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -839,7 +839,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateAsciiStream(int columnIndex, InputStream x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateAsciiStream");
+			System.out.println("TIQ ResultSet.updateAsciiStream");
 			// TODO Auto-generated method stub
 
 		}
@@ -847,147 +847,147 @@ public class Executor extends QueryExecutor {
 		@Override
 		public void updateArray(String columnLabel, Array x)
 				throws SQLException {
-			System.out.println("XXX ResultSet.updateArray");
+			System.out.println("TIQ ResultSet.updateArray");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void updateArray(int columnIndex, Array x) throws SQLException {
-			System.out.println("XXX ResultSet.updateArray");
+			System.out.println("TIQ ResultSet.updateArray");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void setFetchSize(int rows) throws SQLException {
-			System.out.println("XXX ResultSet.setFetchSize");
+			System.out.println("TIQ ResultSet.setFetchSize");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void setFetchDirection(int direction) throws SQLException {
-			System.out.println("XXX ResultSet.setFetchDirection");
+			System.out.println("TIQ ResultSet.setFetchDirection");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public boolean rowUpdated() throws SQLException {
-			System.out.println("XXX ResultSet.rowUpdated");
+			System.out.println("TIQ ResultSet.rowUpdated");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean rowInserted() throws SQLException {
-			System.out.println("XXX ResultSet.rowInserted");
+			System.out.println("TIQ ResultSet.rowInserted");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean rowDeleted() throws SQLException {
-			System.out.println("XXX ResultSet.rowDeleted");
+			System.out.println("TIQ ResultSet.rowDeleted");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean relative(int rows) throws SQLException {
-			System.out.println("XXX ResultSet.relative");
+			System.out.println("TIQ ResultSet.relative");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public void refreshRow() throws SQLException {
-			System.out.println("XXX ResultSet.refreshRow");
+			System.out.println("TIQ ResultSet.refreshRow");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public boolean previous() throws SQLException {
-			System.out.println("XXX ResultSet.previous");
+			System.out.println("TIQ ResultSet.previous");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean next() throws SQLException {
-			System.out.println("XXX ResultSet.next");
+			System.out.println("TIQ ResultSet.next");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public void moveToInsertRow() throws SQLException {
-			System.out.println("XXX ResultSet.moveToInsertRow");
+			System.out.println("TIQ ResultSet.moveToInsertRow");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void moveToCurrentRow() throws SQLException {
-			System.out.println("XXX ResultSet.moveToCurrentRow");
+			System.out.println("TIQ ResultSet.moveToCurrentRow");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public boolean last() throws SQLException {
-			System.out.println("XXX ResultSet.last");
+			System.out.println("TIQ ResultSet.last");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isLast() throws SQLException {
-			System.out.println("XXX ResultSet.isLast");
+			System.out.println("TIQ ResultSet.isLast");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isFirst() throws SQLException {
-			System.out.println("XXX ResultSet.isFirst");
+			System.out.println("TIQ ResultSet.isFirst");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isClosed() throws SQLException {
-			System.out.println("XXX ResultSet.isClosed");
+			System.out.println("TIQ ResultSet.isClosed");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isBeforeFirst() throws SQLException {
-			System.out.println("XXX ResultSet.isBeforeFirst");
+			System.out.println("TIQ ResultSet.isBeforeFirst");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean isAfterLast() throws SQLException {
-			System.out.println("XXX ResultSet.isAfterLast");
+			System.out.println("TIQ ResultSet.isAfterLast");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public void insertRow() throws SQLException {
-			System.out.println("XXX ResultSet.insertRow");
+			System.out.println("TIQ ResultSet.insertRow");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public SQLWarning getWarnings() throws SQLException {
-			System.out.println("XXX ResultSet.getWarnings");
+			System.out.println("TIQ ResultSet.getWarnings");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -995,7 +995,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public InputStream getUnicodeStream(String columnLabel)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getUnicodeStream");
+			System.out.println("TIQ ResultSet.getUnicodeStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1003,28 +1003,28 @@ public class Executor extends QueryExecutor {
 		@Override
 		public InputStream getUnicodeStream(int columnIndex)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getUnicodeStream");
+			System.out.println("TIQ ResultSet.getUnicodeStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public URL getURL(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getURL");
+			System.out.println("TIQ ResultSet.getURL");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public URL getURL(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getURL");
+			System.out.println("TIQ ResultSet.getURL");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public int getType() throws SQLException {
-			System.out.println("XXX ResultSet.getType");
+			System.out.println("TIQ ResultSet.getType");
 			// TODO Auto-generated method stub
 			return 0;
 		}
@@ -1032,7 +1032,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Timestamp getTimestamp(String columnLabel, Calendar cal)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getTimestamp");
+			System.out.println("TIQ ResultSet.getTimestamp");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1040,21 +1040,21 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Timestamp getTimestamp(int columnIndex, Calendar cal)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getTimestamp");
+			System.out.println("TIQ ResultSet.getTimestamp");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Timestamp getTimestamp(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getTimestamp");
+			System.out.println("TIQ ResultSet.getTimestamp");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Timestamp getTimestamp(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getTimestamp");
+			System.out.println("TIQ ResultSet.getTimestamp");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1062,112 +1062,112 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Time getTime(String columnLabel, Calendar cal)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getTime");
+			System.out.println("TIQ ResultSet.getTime");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Time getTime(int columnIndex, Calendar cal) throws SQLException {
-			System.out.println("XXX ResultSet.getTime");
+			System.out.println("TIQ ResultSet.getTime");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Time getTime(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getTime");
+			System.out.println("TIQ ResultSet.getTime");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Time getTime(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getTime");
+			System.out.println("TIQ ResultSet.getTime");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getString(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getString");
+			System.out.println("TIQ ResultSet.getString");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getString(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getString");
+			System.out.println("TIQ ResultSet.getString");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public java.sql.Statement getStatement() throws SQLException {
-			System.out.println("XXX ResultSet.getStatement");
+			System.out.println("TIQ ResultSet.getStatement");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public short getShort(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getShort");
+			System.out.println("TIQ ResultSet.getShort");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public short getShort(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getShort");
+			System.out.println("TIQ ResultSet.getShort");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public SQLXML getSQLXML(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getSQLXML");
+			System.out.println("TIQ ResultSet.getSQLXML");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public SQLXML getSQLXML(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getSQLXML");
+			System.out.println("TIQ ResultSet.getSQLXML");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public RowId getRowId(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getRowId");
+			System.out.println("TIQ ResultSet.getRowId");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public RowId getRowId(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getRowId");
+			System.out.println("TIQ ResultSet.getRowId");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public int getRow() throws SQLException {
-			System.out.println("XXX ResultSet.getRow");
+			System.out.println("TIQ ResultSet.getRow");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public Ref getRef(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getRef");
+			System.out.println("TIQ ResultSet.getRef");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Ref getRef(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getRef");
+			System.out.println("TIQ ResultSet.getRef");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1175,7 +1175,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Object getObject(String columnLabel, Map<String, Class<?>> map)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getObject");
+			System.out.println("TIQ ResultSet.getObject");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1183,49 +1183,49 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Object getObject(int columnIndex, Map<String, Class<?>> map)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getObject");
+			System.out.println("TIQ ResultSet.getObject");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Object getObject(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getObject");
+			System.out.println("TIQ ResultSet.getObject");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Object getObject(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getObject");
+			System.out.println("TIQ ResultSet.getObject");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getNString(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getNString");
+			System.out.println("TIQ ResultSet.getNString");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getNString(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getNString");
+			System.out.println("TIQ ResultSet.getNString");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public NClob getNClob(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getNClob");
+			System.out.println("TIQ ResultSet.getNClob");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public NClob getNClob(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getNClob");
+			System.out.println("TIQ ResultSet.getNClob");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1233,98 +1233,98 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Reader getNCharacterStream(String columnLabel)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getNCharacterStream");
+			System.out.println("TIQ ResultSet.getNCharacterStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Reader getNCharacterStream(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getNCharacterStream");
+			System.out.println("TIQ ResultSet.getNCharacterStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public ResultSetMetaData getMetaData() throws SQLException {
-			System.out.println("XXX ResultSet.getMetaData");
+			System.out.println("TIQ ResultSet.getMetaData");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public long getLong(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getLong");
+			System.out.println("TIQ ResultSet.getLong");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public long getLong(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getLong");
+			System.out.println("TIQ ResultSet.getLong");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getInt(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getInt");
+			System.out.println("TIQ ResultSet.getInt");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getInt(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getInt");
+			System.out.println("TIQ ResultSet.getInt");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getHoldability() throws SQLException {
-			System.out.println("XXX ResultSet.getHoldability");
+			System.out.println("TIQ ResultSet.getHoldability");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public float getFloat(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getFloat");
+			System.out.println("TIQ ResultSet.getFloat");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public float getFloat(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getFloat");
+			System.out.println("TIQ ResultSet.getFloat");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getFetchSize() throws SQLException {
-			System.out.println("XXX ResultSet.getFetchSize");
+			System.out.println("TIQ ResultSet.getFetchSize");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public int getFetchDirection() throws SQLException {
-			System.out.println("XXX ResultSet.getFetchDirection");
+			System.out.println("TIQ ResultSet.getFetchDirection");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public double getDouble(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getDouble");
+			System.out.println("TIQ ResultSet.getDouble");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public double getDouble(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getDouble");
+			System.out.println("TIQ ResultSet.getDouble");
 			// TODO Auto-generated method stub
 			return 0;
 		}
@@ -1332,56 +1332,56 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Date getDate(String columnLabel, Calendar cal)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getDate");
+			System.out.println("TIQ ResultSet.getDate");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Date getDate(int columnIndex, Calendar cal) throws SQLException {
-			System.out.println("XXX ResultSet.getDate");
+			System.out.println("TIQ ResultSet.getDate");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Date getDate(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getDate");
+			System.out.println("TIQ ResultSet.getDate");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Date getDate(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getDate");
+			System.out.println("TIQ ResultSet.getDate");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public String getCursorName() throws SQLException {
-			System.out.println("XXX ResultSet.getCursorName");
+			System.out.println("TIQ ResultSet.getCursorName");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public int getConcurrency() throws SQLException {
-			System.out.println("XXX ResultSet.getConcurrency");
+			System.out.println("TIQ ResultSet.getConcurrency");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public Clob getClob(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getClob");
+			System.out.println("TIQ ResultSet.getClob");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Clob getClob(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getClob");
+			System.out.println("TIQ ResultSet.getClob");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1389,70 +1389,70 @@ public class Executor extends QueryExecutor {
 		@Override
 		public Reader getCharacterStream(String columnLabel)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getCharacterStream");
+			System.out.println("TIQ ResultSet.getCharacterStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Reader getCharacterStream(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getCharacterStream");
+			System.out.println("TIQ ResultSet.getCharacterStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public byte[] getBytes(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getBytes");
+			System.out.println("TIQ ResultSet.getBytes");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public byte[] getBytes(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getBytes");
+			System.out.println("TIQ ResultSet.getBytes");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public byte getByte(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getByte");
+			System.out.println("TIQ ResultSet.getByte");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public byte getByte(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getByte");
+			System.out.println("TIQ ResultSet.getByte");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public boolean getBoolean(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getBoolean");
+			System.out.println("TIQ ResultSet.getBoolean");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public boolean getBoolean(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getBoolean");
+			System.out.println("TIQ ResultSet.getBoolean");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public Blob getBlob(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getBlob");
+			System.out.println("TIQ ResultSet.getBlob");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Blob getBlob(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getBlob");
+			System.out.println("TIQ ResultSet.getBlob");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1460,14 +1460,14 @@ public class Executor extends QueryExecutor {
 		@Override
 		public InputStream getBinaryStream(String columnLabel)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getBinaryStream");
+			System.out.println("TIQ ResultSet.getBinaryStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public InputStream getBinaryStream(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getBinaryStream");
+			System.out.println("TIQ ResultSet.getBinaryStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1475,7 +1475,7 @@ public class Executor extends QueryExecutor {
 		@Override
 		public BigDecimal getBigDecimal(String columnLabel, int scale)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getBigDecimal");
+			System.out.println("TIQ ResultSet.getBigDecimal");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1483,21 +1483,21 @@ public class Executor extends QueryExecutor {
 		@Override
 		public BigDecimal getBigDecimal(int columnIndex, int scale)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getBigDecimal");
+			System.out.println("TIQ ResultSet.getBigDecimal");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public BigDecimal getBigDecimal(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getBigDecimal");
+			System.out.println("TIQ ResultSet.getBigDecimal");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public BigDecimal getBigDecimal(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getBigDecimal");
+			System.out.println("TIQ ResultSet.getBigDecimal");
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -1505,91 +1505,91 @@ public class Executor extends QueryExecutor {
 		@Override
 		public InputStream getAsciiStream(String columnLabel)
 				throws SQLException {
-			System.out.println("XXX ResultSet.getAsciiStream");
+			System.out.println("TIQ ResultSet.getAsciiStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public InputStream getAsciiStream(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getAsciiStream");
+			System.out.println("TIQ ResultSet.getAsciiStream");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Array getArray(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.getArray");
+			System.out.println("TIQ ResultSet.getArray");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public Array getArray(int columnIndex) throws SQLException {
-			System.out.println("XXX ResultSet.getArray");
+			System.out.println("TIQ ResultSet.getArray");
 			// TODO Auto-generated method stub
 			return null;
 		}
 
 		@Override
 		public boolean first() throws SQLException {
-			System.out.println("XXX ResultSet.first");
+			System.out.println("TIQ ResultSet.first");
 			// TODO Auto-generated method stub
 			return false;
 		}
 
 		@Override
 		public int findColumn(String columnLabel) throws SQLException {
-			System.out.println("XXX ResultSet.findColumn");
+			System.out.println("TIQ ResultSet.findColumn");
 			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		@Override
 		public void deleteRow() throws SQLException {
-			System.out.println("XXX ResultSet.deleteRow");
+			System.out.println("TIQ ResultSet.deleteRow");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void close() throws SQLException {
-			System.out.println("XXX ResultSet.close");
+			System.out.println("TIQ ResultSet.close");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void clearWarnings() throws SQLException {
-			System.out.println("XXX ResultSet.clearWarnings");
+			System.out.println("TIQ ResultSet.clearWarnings");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void cancelRowUpdates() throws SQLException {
-			System.out.println("XXX ResultSet.cancelRowUpdates");
+			System.out.println("TIQ ResultSet.cancelRowUpdates");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void beforeFirst() throws SQLException {
-			System.out.println("XXX ResultSet.beforeFirst");
+			System.out.println("TIQ ResultSet.beforeFirst");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public void afterLast() throws SQLException {
-			System.out.println("XXX ResultSet.afterLast");
+			System.out.println("TIQ ResultSet.afterLast");
 			// TODO Auto-generated method stub
 
 		}
 
 		@Override
 		public boolean absolute(int row) throws SQLException {
-			System.out.println("XXX ResultSet.absolute");
+			System.out.println("TIQ ResultSet.absolute");
 			// TODO Auto-generated method stub
 			return false;
 		}
@@ -1668,10 +1668,29 @@ public class Executor extends QueryExecutor {
 				}
 			}
 			
+			private String getField(int columnIndex) throws SQLException {
+				String[] split = row.split("\t");
+				if (columnIndex > split.length) {
+					field = null;
+				} else {
+					field = split[columnIndex - 1];
+				}
+				return field;
+			}
+
 			@Override
 			public String getString(int columnIndex) throws SQLException {
-				field = row.split("\t")[columnIndex - 1];
-				return field;
+				return getField(columnIndex);
+			}
+			
+			@Override
+			public long getLong(int columnIndex) throws SQLException {
+				return Long.valueOf(getField(columnIndex));
+			}
+			
+			@Override
+			public Object getObject(int columnIndex) throws SQLException {
+				return getField(columnIndex);
 			}
 			
 			@Override
@@ -1726,7 +1745,11 @@ public class Executor extends QueryExecutor {
 						if ("string".equals(type)) {
 							return Types.VARCHAR;
 						}
-						return 0;
+						if ("bigint".equals(type)) {
+							return Types.BIGINT;
+						}
+						System.out.println("TIQ ResultSetMetaData#getColumnType unknown column type: " + type);
+						return Types.JAVA_OBJECT;
 					}
 					
 					@Override
