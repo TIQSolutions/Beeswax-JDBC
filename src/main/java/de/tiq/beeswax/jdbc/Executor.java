@@ -1612,6 +1612,7 @@ public class Executor extends QueryExecutor {
 	}
 
 	private BeeswaxConnectionHandler handle;
+	private ResultSet resultSet;
 
 	public Executor(BeeswaxConnectionHandler handle) {
 		super(handle);
@@ -1620,137 +1621,25 @@ public class Executor extends QueryExecutor {
 
 	@Override
 	public ResultSet executeQuery(final String sql) throws SQLException {
+		execute(sql);
+		return getResultSet();
+	}
+	
+	@Override
+	public boolean execute(String sql) throws SQLException {
 		Query query = new Query().setQuery(sql);
 		try {
-			final QueryHandle queryHandle = handle.getClient().query(query);
-			return new DefaultResultSet() {
-
-				private List<String> data = Collections.emptyList();
-				private String row;
-				private boolean hasMore = true;
-				private String field;
-
-				@Override
-				public boolean next() throws SQLException {
-					fetchDataIfNeeded(queryHandle);
-
-					if (data.isEmpty()) {
-						row = null;
-					} else {
-						row = data.remove(0);
-					}
-					return row != null;
-				}
-				
-				private void fetchDataIfNeeded(final QueryHandle queryHandle)
-						throws SQLException {
-					if (data.isEmpty() && hasMore) {
-						try {
-							int fetchSize = 101;
-							Results results = handle.getClient().fetch(
-									queryHandle, false, fetchSize);
-							data = results.getData();
-							hasMore = (data.size() == fetchSize);
-						} catch (Exception e) {
-							throw new SQLException(e);
-						}
-					}
-				}
-
-				@Override
-				public String getString(int columnIndex) throws SQLException {
-					field = row.split("\t")[columnIndex - 1];
-					return field;
-				}
-				
-				@Override
-				public boolean wasNull() throws SQLException {
-					return field == null || field.trim().length() == 0;
-				}
-
-				@Override
-				public ResultSetMetaData getMetaData() throws SQLException {
-					return new DefaultResultSetMetaData() {
-						private Schema schema;
-
-						@Override
-						public int getColumnCount() throws SQLException {
-							try {
-								fetchSchemaIfNeeded(queryHandle);
-								return schema.getFieldSchemasSize();
-							} catch (QueryNotFoundException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							} catch (TException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-
-							return 0;
-						}
-
-						@Override
-						public String getColumnName(int arg0)
-								throws SQLException {
-							try {
-								fetchSchemaIfNeeded(queryHandle);
-								return schema.getFieldSchemas().get(arg0 - 1)
-										.getName();
-							} catch (QueryNotFoundException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							} catch (TException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-
-							return null;
-						}
-
-						@Override
-						public int getColumnType(int arg0) throws SQLException {
-							String type = getColumnTypeName(arg0);
-
-							// TODO
-							if ("string".equals(type)) {
-								return Types.VARCHAR;
-							}
-							return 0;
-						}
-
-						@Override
-						public String getColumnTypeName(int arg0)
-								throws SQLException {
-							try {
-								fetchSchemaIfNeeded(queryHandle);
-								return schema.getFieldSchemas()
-										.get(arg0 - 1).getType();
-							} catch (QueryNotFoundException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							} catch (TException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-							// TODO Auto-generated method stub
-							return null;
-						}
-						
-						private void fetchSchemaIfNeeded(QueryHandle queryHandle)
-								throws QueryNotFoundException, TException {
-							if (schema == null) {
-								ResultsMetadata metadata = handle.getClient()
-										.get_results_metadata(queryHandle);
-								schema = metadata.getSchema();
-							}
-						}
-					};
-				}
-			};
+			QueryHandle queryHandle = handle.getClient().query(query);
+			resultSet = getResultSet(queryHandle);
+			return resultSet != null;
 		} catch (Exception e) {
 			throw new SQLException(e);
 		}
-
+	}
+	
+	@Override
+	public ResultSet getResultSet() throws SQLException {
+		return resultSet;
 	}
 
 	@Override
@@ -1759,4 +1648,131 @@ public class Executor extends QueryExecutor {
 		return 0;
 	}
 
+	
+	private ResultSet getResultSet(final QueryHandle queryHandle) {
+		return new DefaultResultSet() {
+			
+			private List<String> data = Collections.emptyList();
+			private String row;
+			private boolean hasMore = true;
+			private String field;
+			
+			@Override
+			public boolean next() throws SQLException {
+				fetchDataIfNeeded(queryHandle);
+				
+				if (data.isEmpty()) {
+					row = null;
+				} else {
+					row = data.remove(0);
+				}
+				return row != null;
+			}
+			
+			private void fetchDataIfNeeded(final QueryHandle queryHandle)
+					throws SQLException {
+				if (data.isEmpty() && hasMore) {
+					try {
+						int fetchSize = 101;
+						Results results = handle.getClient().fetch(
+								queryHandle, false, fetchSize);
+						data = results.getData();
+						hasMore = (data.size() == fetchSize);
+					} catch (Exception e) {
+						throw new SQLException(e);
+					}
+				}
+			}
+			
+			@Override
+			public String getString(int columnIndex) throws SQLException {
+				field = row.split("\t")[columnIndex - 1];
+				return field;
+			}
+			
+			@Override
+			public boolean wasNull() throws SQLException {
+				return field == null || field.trim().length() == 0;
+			}
+			
+			@Override
+			public ResultSetMetaData getMetaData() throws SQLException {
+				return new DefaultResultSetMetaData() {
+					private Schema schema;
+					
+					@Override
+					public int getColumnCount() throws SQLException {
+						try {
+							fetchSchemaIfNeeded(queryHandle);
+							return schema.getFieldSchemasSize();
+						} catch (QueryNotFoundException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (TException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						
+						return 0;
+					}
+					
+					@Override
+					public String getColumnName(int arg0)
+							throws SQLException {
+						try {
+							fetchSchemaIfNeeded(queryHandle);
+							return schema.getFieldSchemas().get(arg0 - 1)
+									.getName();
+						} catch (QueryNotFoundException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (TException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						
+						return null;
+					}
+					
+					@Override
+					public int getColumnType(int arg0) throws SQLException {
+						String type = getColumnTypeName(arg0);
+						
+						// TODO
+						if ("string".equals(type)) {
+							return Types.VARCHAR;
+						}
+						return 0;
+					}
+					
+					@Override
+					public String getColumnTypeName(int arg0)
+							throws SQLException {
+						try {
+							fetchSchemaIfNeeded(queryHandle);
+							return schema.getFieldSchemas()
+									.get(arg0 - 1).getType();
+						} catch (QueryNotFoundException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (TException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						// TODO Auto-generated method stub
+						return null;
+					}
+					
+					private void fetchSchemaIfNeeded(QueryHandle queryHandle)
+							throws QueryNotFoundException, TException {
+						if (schema == null) {
+							ResultsMetadata metadata = handle.getClient()
+									.get_results_metadata(queryHandle);
+							schema = metadata.getSchema();
+						}
+					}
+				};
+			}
+		};
+	}
 }
