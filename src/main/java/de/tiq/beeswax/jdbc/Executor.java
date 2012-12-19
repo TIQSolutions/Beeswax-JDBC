@@ -1689,6 +1689,11 @@ public class Executor extends QueryExecutor {
 			}
 			
 			@Override
+			public double getDouble(int columnIndex) throws SQLException {
+				return Double.valueOf(getField(columnIndex));
+			}
+			
+			@Override
 			public Object getObject(int columnIndex) throws SQLException {
 				return getField(columnIndex);
 			}
