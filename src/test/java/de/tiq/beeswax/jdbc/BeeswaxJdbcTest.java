@@ -62,6 +62,22 @@ public class BeeswaxJdbcTest {
 	}
 	
 	@Test
+	public void queryWithBigResult() throws Exception {
+		Statement statement = conn.createStatement();
+		
+		Assert.assertNotNull(statement);
+		ResultSet resultSet = statement.executeQuery("select * from tweets limit 1200");
+		
+		Assert.assertNotNull(resultSet);
+		
+		int cnt = 0;
+		while (resultSet.next()) {
+			cnt++;
+		}
+		Assert.assertEquals(1200, cnt);		
+	}
+	
+	@Test
 	public void queryWithWhere() throws SQLException {
 		Statement statement = conn.createStatement();
 		
