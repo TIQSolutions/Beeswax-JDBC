@@ -1654,12 +1654,27 @@ public class Executor extends QueryExecutor {
 			
 			private List<String> data = Collections.emptyList();
 			private String row;
-			private boolean hasMore = true;
 			private String field;
+			private boolean closed = false;
 			
 			@Override
 			public boolean next() throws SQLException {
-				fetchDataIfNeeded(queryHandle);
+				if (closed)
+					return false;
+				
+				if (data.isEmpty()) {
+					try {
+						Results results = handle.getClient().fetch(
+								queryHandle, false, -1);
+						data = results.getData();
+						if (data.isEmpty()) {
+							handle.getClient().close(queryHandle);
+							closed = true;
+						}
+					} catch (Exception e) {
+						throw new SQLException(e);
+					}
+				}
 				
 				if (data.isEmpty()) {
 					row = null;
@@ -1667,21 +1682,6 @@ public class Executor extends QueryExecutor {
 					row = data.remove(0);
 				}
 				return row != null;
-			}
-			
-			private void fetchDataIfNeeded(final QueryHandle queryHandle)
-					throws SQLException {
-				if (data.isEmpty() && hasMore) {
-					try {
-						int fetchSize = 101;
-						Results results = handle.getClient().fetch(
-								queryHandle, false, fetchSize);
-						data = results.getData();
-						hasMore = (data.size() == fetchSize);
-					} catch (Exception e) {
-						throw new SQLException(e);
-					}
-				}
 			}
 			
 			private String getField(int columnIndex) throws SQLException {
