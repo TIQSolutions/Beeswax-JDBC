@@ -1609,6 +1609,20 @@ public class Executor extends QueryExecutor {
 			// TODO Auto-generated method stub
 			return false;
 		}
+
+		@Override
+		public <T> T getObject(int columnIndex, Class<T> type)
+				throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public <T> T getObject(String columnLabel, Class<T> type)
+				throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
 	}
 
 	private BeeswaxConnectionHandler handle;
