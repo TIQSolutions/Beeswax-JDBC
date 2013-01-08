@@ -14,7 +14,11 @@
   <dependencySets>
     <dependencySet>
       <outputDirectory>lib</outputDirectory>
-      <includes/>
+      <excludes>
+      	<exclude>de.tiq:Jdbc_Annotations</exclude>
+      	<exclude>org.apache.velocity:velocity</exclude>
+      	<exclude>commons-collections:commons-collections</exclude>
+      </excludes>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
   </dependencySets>
