@@ -615,4 +615,16 @@ public abstract class AbstractResultSet implements ResultSet {
 	protected Charset getCharset() {
 		return Charset.defaultCharset();
 	}
+
+	public <T> T getObject(String columnLabel, Class<T> type) throws SQLException {
+		return getObject( findColumn(columnLabel), type);
+	}
+
+	public <T> T getObject(int columnIndex, Class<T> type) throws SQLException {
+		Object object = getObject(columnIndex);
+		if (type.isInstance(object)) {
+			return (T) object;
+		}
+		throw new SQLException("Conversation not supported");
+	}
 }
