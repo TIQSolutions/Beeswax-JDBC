@@ -36,12 +36,13 @@ import com.cloudera.beeswax.api.QueryNotFoundException;
 import com.cloudera.beeswax.api.Results;
 import com.cloudera.beeswax.api.ResultsMetadata;
 
-import de.tiq.jdbc.AbstractReadonlyResultSet;
 import de.tiq.jdbc.QueryExecutor;
 import de.tiq.jdbc.annotations.JdbcDriver;
+import de.tiq.jdbc.defaultimpl.AbstractReadonlyResultSet;
+import de.tiq.jdbc.defaultimpl.DefaultResultSetMetaData;
 
 @JdbcDriver(name = "BeeswaxDriver", packageDefinition = "de.tiq.beeswax.jdbc", scheme = "beeswax")
-public class Executor extends QueryExecutor {
+public class Executor extends QueryExecutor<BeeswaxConnectionHandler> {
 
 	private BeeswaxConnectionHandler handle;
 	private ResultSet resultSet;

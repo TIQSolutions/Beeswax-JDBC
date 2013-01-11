@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.tiq</groupId>
 	<artifactId>beeswax-jdbc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>de.tiq</groupId>
 			<artifactId>Jdbc_Annotations</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.3-SNAPSHOT</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>commons-lang</artifactId>
@@ -17,10 +17,14 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>de.tiq</groupId>
+			<artifactId>JdbcUtils</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>com.cloudera.hue</groupId>
 			<artifactId>beeswax-server</artifactId>
 			<version>2.1.0-cdh4.1.2</version>
-
 			<exclusions>
 				<exclusion>
 					<groupId>org.apache.hadoop</groupId>
