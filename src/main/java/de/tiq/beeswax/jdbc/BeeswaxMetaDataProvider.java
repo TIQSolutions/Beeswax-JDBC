@@ -26,7 +26,7 @@ import de.tiq.jdbc.ConnectionMetaDataProvider;
 import de.tiq.jdbc.annotations.ConnectionMetaData;
 
 @ConnectionMetaData
-public class BeeswaxMetaDataProvider implements ConnectionMetaDataProvider {
+public class BeeswaxMetaDataProvider implements ConnectionMetaDataProvider<BeeswaxConnectionHandler> {
 
 	public static class DefaultDatabaseMetaData implements DatabaseMetaData {
 
