@@ -38,8 +38,8 @@ import com.cloudera.beeswax.api.ResultsMetadata;
 
 import de.tiq.jdbc.QueryExecutor;
 import de.tiq.jdbc.annotations.JdbcDriver;
-import de.tiq.jdbc.defaultimpl.AbstractReadonlyResultSet;
-import de.tiq.jdbc.defaultimpl.DefaultResultSetMetaData;
+import de.tiq.jdbc.impl.AbstractReadonlyResultSet;
+import de.tiq.jdbc.impl.DefaultResultSetMetaData;
 
 @JdbcDriver(name = "BeeswaxDriver", packageDefinition = "de.tiq.beeswax.jdbc", scheme = "beeswax")
 public class Executor extends QueryExecutor<BeeswaxConnectionHandler> {
