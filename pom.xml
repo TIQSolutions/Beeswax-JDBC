@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.tiq</groupId>
 	<artifactId>beeswax-jdbc</artifactId>
-	<version>0.0.3</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<inceptionYear>2012</inceptionYear>
 	<description>JDBC Driver to connect to the Cloudera Beeswax interface. Enables data fetching from impala.</description>
 	<organization>
@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>de.tiq</groupId>
 			<artifactId>Jdbc_Annotations</artifactId>
-			<version>0.0.4</version>
+			<version>0.1.0-SNAPSHOT</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>commons-lang</artifactId>
@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>de.tiq</groupId>
 			<artifactId>JdbcUtils</artifactId>
-			<version>0.0.2</version>
+			<version>0.1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.cloudera.hue</groupId>
