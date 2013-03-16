@@ -196,15 +196,14 @@ public class Executor extends QueryExecutor<BeeswaxConnectionHandler> {
 					public int getColumnType(int arg0) throws SQLException {
 						String type = getColumnTypeName(arg0);
 						
-						// TODO
-						if ("string".equals(type)) {
-							return Types.VARCHAR;
+						int retValue = HiveColumnTypeMapper.toJava(type);
+						
+						if (retValue == -1) {
+							System.out.println("TIQ ResultSetMetaData#getColumnType unknown column type: " + type);
+							retValue = Types.JAVA_OBJECT;
 						}
-						if ("bigint".equals(type)) {
-							return Types.BIGINT;
-						}
-						System.out.println("TIQ ResultSetMetaData#getColumnType unknown column type: " + type);
-						return Types.JAVA_OBJECT;
+						
+						return retValue;
 					}
 					
 					@Override

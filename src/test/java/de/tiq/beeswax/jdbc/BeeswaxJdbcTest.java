@@ -142,6 +142,26 @@ public class BeeswaxJdbcTest {
 		Assert.assertNotNull(databaseMetaData);
 		Assert.assertEquals("beeswax", databaseMetaData.getDatabaseProductName());
 		Assert.assertEquals("BeeswaxDriver", databaseMetaData.getDriverName());
+		
+		ResultSet tables = databaseMetaData.getTables("", "", "", null);
+		Assert.assertNotNull(tables);
+		Assert.assertTrue(tables.next());
+		Assert.assertEquals("jdbctest", tables.getString("TABLE_NAME"));
+		Assert.assertEquals("TABLE", tables.getString("TABLE_TYPE"));
+		Assert.assertEquals("", tables.getString("REMARKS"));
+		
+		Assert.assertTrue(tables.next());
+		Assert.assertEquals("ocean_iptv", tables.getString("TABLE_NAME"));
+		int idx = 2;
+		while (tables.next()) idx++;
+		Assert.assertEquals(5, idx);
+		
+		ResultSet columns = databaseMetaData.getColumns("", "", "jdbctest", "");
+		Assert.assertNotNull(columns);
+		Assert.assertTrue(columns.next());
+		Assert.assertEquals("jdbctest", columns.getString("TABLE_NAME"));
+		Assert.assertEquals("id", columns.getString("COLUMN_NAME"));
+		Assert.assertEquals(Types.INTEGER, columns.getInt("DATA_TYPE"));
 	}
 	
 	@Test

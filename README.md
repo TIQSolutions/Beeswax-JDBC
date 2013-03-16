@@ -68,4 +68,3 @@ You can contact us: info@tiq-solutions.de
 
 The project is licensed under terms of a dual treatment. For non-commercial projects, the source code is provided under terms of the [GPL](http://www.gnu.org/licenses/gpl-2.0.html).
 If you wish to include this project in a proprietary context, you must be granted a special vendor license.   
-
